@@ -17,6 +17,8 @@
 		18F140E52677E018006B022E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F140E42677E018006B022E /* Login.storyboard */; };
 		18F140E82677E199006B022E /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F140E72677E199006B022E /* HomepageViewController.swift */; };
 		18F140EA2677E1AE006B022E /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F140E92677E1AE006B022E /* Homepage.storyboard */; };
+		18F140EC2677F667006B022E /* CreateAccoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F140EB2677F667006B022E /* CreateAccoutViewController.swift */; };
+		18F140EE2677F694006B022E /* WelcomeBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F140ED2677F694006B022E /* WelcomeBackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		18F140E42677E018006B022E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		18F140E72677E199006B022E /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		18F140E92677E1AE006B022E /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		18F140EB2677F667006B022E /* CreateAccoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccoutViewController.swift; sourceTree = "<group>"; };
+		18F140ED2677F694006B022E /* WelcomeBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			children = (
 				18F140E22677E004006B022E /* LoginViewController.swift */,
 				18F140E42677E018006B022E /* Login.storyboard */,
+				18F140EB2677F667006B022E /* CreateAccoutViewController.swift */,
+				18F140ED2677F694006B022E /* WelcomeBackViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -186,7 +192,9 @@
 				18F140C82677DB33006B022E /* AppDelegate.swift in Sources */,
 				18F140DE2677DF84006B022E /* SignupViewController.swift in Sources */,
 				18F140E32677E004006B022E /* LoginViewController.swift in Sources */,
+				18F140EE2677F694006B022E /* WelcomeBackViewController.swift in Sources */,
 				18F140CA2677DB33006B022E /* SceneDelegate.swift in Sources */,
+				18F140EC2677F667006B022E /* CreateAccoutViewController.swift in Sources */,
 				18F140E82677E199006B022E /* HomepageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
