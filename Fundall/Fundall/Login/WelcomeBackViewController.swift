@@ -8,7 +8,12 @@
 import UIKit
 
 class WelcomeBackViewController: UIViewController {
-
+    @IBOutlet weak var userAvatar: UIImageView!
+    @IBOutlet weak var userGreeting: UILabel!
+    @IBOutlet weak var userEmailLabel: UILabel!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var secureButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,5 +21,17 @@ class WelcomeBackViewController: UIViewController {
     }
     
 
-   
+    @IBAction func eyeButtonTapped(_ sender: UIButton) {
+        passwordField.isSecureTextEntry.toggle()
+        let imageName = passwordField.isSecureTextEntry ? "eye.slash" : "eye"
+        secureButton.setImage(UIImage(systemName: imageName), for: .normal)
+    }
+    
+    @IBAction func loginPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func createAccountPressed(_ sender: UIButton) {
+        
+    }
 }

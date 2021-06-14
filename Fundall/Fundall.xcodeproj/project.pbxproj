@@ -91,8 +91,8 @@
 		18F140DC2677DD82006B022E /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				18F140E22677E004006B022E /* LoginViewController.swift */,
 				18F140E42677E018006B022E /* Login.storyboard */,
+				18F140E22677E004006B022E /* LoginViewController.swift */,
 				18F140EB2677F667006B022E /* CreateAccoutViewController.swift */,
 				18F140ED2677F694006B022E /* WelcomeBackViewController.swift */,
 			);
