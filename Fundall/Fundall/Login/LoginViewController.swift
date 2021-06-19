@@ -10,6 +10,7 @@ import UIKit
 class LoginViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var passwordSecure: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,12 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func securePassword(_ sender: UIButton) {
+        passwordField.isSecureTextEntry.toggle()
+        let imageName = passwordField.isSecureTextEntry ? "eye.slash" : "eye"
+        passwordSecure.setImage(UIImage(systemName: imageName), for: .normal)
+    }
+    
 
     @IBAction func loginPressed(_ sender: UIButton) {
         guard let email = emailField.text?.lowercased() else {return}

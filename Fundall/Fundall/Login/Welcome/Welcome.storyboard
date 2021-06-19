@@ -25,17 +25,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1sK-0v-6ld">
-                                <rect key="frame" x="119" y="160" width="175" height="129"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="129" id="bsm-MH-eN4"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-og-Jma">
                                 <rect key="frame" x="100" y="325" width="214.5" height="63"/>
                                 <subviews>
@@ -125,6 +114,15 @@
                                     <action selector="eyeButtonTapped:" destination="Ib8-h6-lbc" eventType="touchUpInside" id="ePO-rr-h2W"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="1sK-0v-6ld">
+                                <rect key="frame" x="141" y="160" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="65"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vWv-IE-VJ7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -132,13 +130,9 @@
                             <constraint firstItem="tbf-sA-C6C" firstAttribute="leading" secondItem="vWv-IE-VJ7" secondAttribute="leading" constant="120" id="16z-0z-WUE"/>
                             <constraint firstItem="IpR-2q-7mU" firstAttribute="top" secondItem="sh3-og-Jma" secondAttribute="bottom" constant="60" id="4gt-L7-bTN"/>
                             <constraint firstItem="vWv-IE-VJ7" firstAttribute="bottom" secondItem="33k-GG-g32" secondAttribute="bottom" constant="123" id="5tZ-mk-18H"/>
-                            <constraint firstItem="sh3-og-Jma" firstAttribute="top" secondItem="1sK-0v-6ld" secondAttribute="bottom" constant="36" id="F40-CB-Ex4"/>
-                            <constraint firstItem="1sK-0v-6ld" firstAttribute="leading" secondItem="vWv-IE-VJ7" secondAttribute="leading" constant="119" id="HZP-Gb-mtc"/>
-                            <constraint firstItem="vWv-IE-VJ7" firstAttribute="trailing" secondItem="1sK-0v-6ld" secondAttribute="trailing" constant="120" id="Ndd-qT-31w"/>
                             <constraint firstItem="vWv-IE-VJ7" firstAttribute="trailing" secondItem="sh3-og-Jma" secondAttribute="trailing" constant="99.5" id="OQe-t4-DAc"/>
                             <constraint firstItem="33k-GG-g32" firstAttribute="top" secondItem="70S-jL-0fK" secondAttribute="bottom" constant="24" id="VFg-u7-1v4"/>
                             <constraint firstItem="vWv-IE-VJ7" firstAttribute="trailing" secondItem="70S-jL-0fK" secondAttribute="trailing" constant="18" id="WXJ-8J-xoI"/>
-                            <constraint firstItem="1sK-0v-6ld" firstAttribute="top" secondItem="tbf-sA-C6C" secondAttribute="bottom" constant="44" id="ZOr-xm-8KL"/>
                             <constraint firstItem="33k-GG-g32" firstAttribute="leading" secondItem="vWv-IE-VJ7" secondAttribute="leading" constant="20" id="bQp-4N-Th4"/>
                             <constraint firstItem="tbf-sA-C6C" firstAttribute="top" secondItem="vWv-IE-VJ7" secondAttribute="top" constant="42" id="bWU-4i-ScU"/>
                             <constraint firstItem="sh3-og-Jma" firstAttribute="leading" secondItem="vWv-IE-VJ7" secondAttribute="leading" constant="100" id="fPd-F7-JGH"/>
@@ -159,10 +153,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvm-gl-1oA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="89"/>
+            <point key="canvasLocation" x="132" y="5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle" width="38" height="38"/>
         <image name="eye.slash" catalog="system" width="128" height="86"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
