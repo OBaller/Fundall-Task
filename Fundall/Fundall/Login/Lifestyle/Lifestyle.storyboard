@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-06-15 at 11.23.57" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-h1-KNd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-06-15 at 11.25.51" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-dB-HMk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-dB-HMk">
                                 <rect key="frame" x="137" y="214" width="140" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="HmA-T8-mYF"/>
@@ -97,51 +97,52 @@
                                     <constraint firstAttribute="width" constant="201" id="T98-Y5-cHS"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXR-WD-AQG">
-                                <rect key="frame" x="20" y="752" width="70" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="175" translatesAutoresizingMaskIntoConstraints="NO" id="np0-iQ-HXw">
+                                <rect key="frame" x="55" y="752" width="317" height="83"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXR-WD-AQG">
+                                        <rect key="frame" x="0.0" y="0.5" width="71" height="82"/>
+                                        <state key="normal" image="Group 46"/>
+                                        <connections>
+                                            <action selector="lockTapped:" destination="vsT-4U-evJ" eventType="touchUpInside" id="F8R-mp-Ovv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jO-0c-oZS">
+                                        <rect key="frame" x="246" y="0.0" width="71" height="83"/>
+                                        <state key="normal" image="Group 47"/>
+                                        <connections>
+                                            <action selector="biometricTapped:" destination="vsT-4U-evJ" eventType="touchUpInside" id="R7Y-5d-alh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="0OT-Px-Fub"/>
-                                    <constraint firstAttribute="width" constant="70" id="sH5-MX-J3B"/>
+                                    <constraint firstAttribute="height" constant="83" id="RMY-DE-QPE"/>
+                                    <constraint firstAttribute="width" constant="317" id="ggZ-Jt-yM3"/>
                                 </constraints>
-                                <state key="normal" image="lock3"/>
-                                <connections>
-                                    <action selector="lockTapped:" destination="vsT-4U-evJ" eventType="touchUpInside" id="F8R-mp-Ovv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jO-0c-oZS">
-                                <rect key="frame" x="304" y="752" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="ORK-mu-PU6"/>
-                                    <constraint firstAttribute="height" constant="70" id="lag-OR-W5Q"/>
-                                </constraints>
-                                <state key="normal" image="biometric"/>
-                                <connections>
-                                    <action selector="biometricTapped:" destination="vsT-4U-evJ" eventType="touchUpInside" id="R7Y-5d-alh"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ruP-Jl-38P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="tyi-e1-BiK" secondAttribute="trailing" constant="78" id="0fy-yD-DxB"/>
-                            <constraint firstItem="vXR-WD-AQG" firstAttribute="leading" secondItem="ruP-Jl-38P" secondAttribute="leading" constant="20" id="6Cp-dE-bbc"/>
                             <constraint firstAttribute="bottom" secondItem="Wsx-h1-KNd" secondAttribute="bottom" id="8p7-7J-ZgW"/>
-                            <constraint firstItem="ruP-Jl-38P" firstAttribute="bottom" secondItem="vXR-WD-AQG" secondAttribute="bottom" constant="40" id="CaQ-SR-XC2"/>
                             <constraint firstItem="nf9-dB-HMk" firstAttribute="leading" secondItem="Q7P-Eo-ne2" secondAttribute="leadingMargin" constant="117" id="FDa-ry-fXK"/>
                             <constraint firstItem="nf9-dB-HMk" firstAttribute="top" secondItem="Q7P-Eo-ne2" secondAttribute="topMargin" constant="170" id="IEa-mY-JNQ"/>
                             <constraint firstItem="qhN-9k-Z4o" firstAttribute="leading" secondItem="Q7P-Eo-ne2" secondAttribute="leadingMargin" constant="85" id="INX-eK-ArW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="np0-iQ-HXw" secondAttribute="trailing" constant="22" id="Ira-mC-s1M"/>
                             <constraint firstItem="dEj-9e-xQQ" firstAttribute="top" secondItem="tyi-e1-BiK" secondAttribute="bottom" constant="17" id="MOr-hp-QBf"/>
                             <constraint firstItem="tyi-e1-BiK" firstAttribute="leading" secondItem="Q7P-Eo-ne2" secondAttribute="leadingMargin" constant="64" id="N3E-Gw-7oM"/>
                             <constraint firstItem="Wsx-h1-KNd" firstAttribute="leading" secondItem="ruP-Jl-38P" secondAttribute="leading" id="UbY-wL-bqh"/>
+                            <constraint firstItem="np0-iQ-HXw" firstAttribute="top" secondItem="qhN-9k-Z4o" secondAttribute="bottom" constant="265" id="UhT-wl-xWp"/>
                             <constraint firstItem="Wsx-h1-KNd" firstAttribute="top" secondItem="Q7P-Eo-ne2" secondAttribute="top" id="VKv-2e-P6n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dEj-9e-xQQ" secondAttribute="trailing" constant="88" id="XB7-OG-Swf"/>
                             <constraint firstItem="tyi-e1-BiK" firstAttribute="top" secondItem="nf9-dB-HMk" secondAttribute="bottom" constant="32" id="YUS-6L-WHP"/>
+                            <constraint firstItem="np0-iQ-HXw" firstAttribute="leading" secondItem="Q7P-Eo-ne2" secondAttribute="leadingMargin" constant="35" id="Zrg-ZC-Aac"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="np0-iQ-HXw" secondAttribute="bottom" constant="27" id="a3v-dL-kaf"/>
                             <constraint firstItem="Wsx-h1-KNd" firstAttribute="trailing" secondItem="ruP-Jl-38P" secondAttribute="trailing" id="e9I-Pj-NGD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qhN-9k-Z4o" secondAttribute="trailing" constant="88" id="foC-MA-rE0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4jO-0c-oZS" secondAttribute="trailing" constant="20" id="hVs-h9-Dyx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nf9-dB-HMk" secondAttribute="trailing" constant="117" id="jPg-bd-A3R"/>
                             <constraint firstItem="dEj-9e-xQQ" firstAttribute="leading" secondItem="Q7P-Eo-ne2" secondAttribute="leadingMargin" constant="72" id="lKt-cT-lSu"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="4jO-0c-oZS" secondAttribute="bottom" constant="40" id="p82-qU-qgQ"/>
                             <constraint firstItem="qhN-9k-Z4o" firstAttribute="top" secondItem="tyi-e1-BiK" secondAttribute="bottom" constant="45" id="vXr-yq-elD"/>
                         </constraints>
                     </view>
@@ -156,10 +157,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Group 2" width="88" height="66.333335876464844"/>
+        <image name="Group 46" width="65" height="82"/>
+        <image name="Group 47" width="71" height="83"/>
         <image name="Screenshot 2021-06-15 at 11.23.57" width="152.66667175292969" height="94.666664123535156"/>
-        <image name="Screenshot 2021-06-15 at 11.25.51" width="56.666667938232422" height="49.333332061767578"/>
-        <image name="biometric" width="433.33334350585938" height="433.33334350585938"/>
-        <image name="lock3" width="75" height="75"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
