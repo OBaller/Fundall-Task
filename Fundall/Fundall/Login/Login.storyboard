@@ -122,7 +122,7 @@
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="forgotPasswordPressed:" destination="v5n-hk-aL6" eventType="touchUpInside" id="sjk-Dc-sNv"/>
+                                    <action selector="forgotPasswordPressed:" destination="v5n-hk-aL6" eventType="touchUpInside" id="V3Q-yZ-uMD"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="dxH-sa-UMe">

@@ -10,6 +10,8 @@
 		18D67C6B267E0833008D4C6F /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D67C6A267E0833008D4C6F /* Welcome.storyboard */; };
 		18D67C6E267E09A6008D4C6F /* Lifestyle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D67C6D267E09A6008D4C6F /* Lifestyle.storyboard */; };
 		18D67C71267E36F1008D4C6F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18D67C70267E36F1008D4C6F /* IQKeyboardManagerSwift */; };
+		18D67C82267EA5E7008D4C6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C81267EA5E7008D4C6F /* ProfileViewController.swift */; };
+		18D67C84267EA601008D4C6F /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D67C83267EA601008D4C6F /* ProfilePage.storyboard */; };
 		18F140C82677DB33006B022E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F140C72677DB33006B022E /* AppDelegate.swift */; };
 		18F140CA2677DB33006B022E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F140C92677DB33006B022E /* SceneDelegate.swift */; };
 		18F140D12677DB34006B022E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F140D02677DB34006B022E /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		18D67C6A267E0833008D4C6F /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		18D67C6D267E09A6008D4C6F /* Lifestyle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lifestyle.storyboard; sourceTree = "<group>"; };
+		18D67C81267EA5E7008D4C6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18D67C83267EA601008D4C6F /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
 		18F140C42677DB33006B022E /* Fundall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F140C72677DB33006B022E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F140C92677DB33006B022E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 			path = Lifestyle;
 			sourceTree = "<group>";
 		};
+		18D67C7E267EA403008D4C6F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				18D67C81267EA5E7008D4C6F /* ProfileViewController.swift */,
+				18D67C83267EA601008D4C6F /* ProfilePage.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		18F140BB2677DB33006B022E = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,7 @@
 		18F140C62677DB33006B022E /* Fundall */ = {
 			isa = PBXGroup;
 			children = (
+				18D67C7E267EA403008D4C6F /* Profile */,
 				18F140EF2678B065006B022E /* Extension */,
 				18F140E62677E180006B022E /* Home */,
 				18F140DC2677DD82006B022E /* Login */,
@@ -218,6 +232,7 @@
 				18F140D42677DB34006B022E /* LaunchScreen.storyboard in Resources */,
 				18F140D12677DB34006B022E /* Assets.xcassets in Resources */,
 				18F140EA2677E1AE006B022E /* Homepage.storyboard in Resources */,
+				18D67C84267EA601008D4C6F /* ProfilePage.storyboard in Resources */,
 				18F140E12677DFDB006B022E /* Signup.storyboard in Resources */,
 				18F140E52677E018006B022E /* Login.storyboard in Resources */,
 				18D67C6E267E09A6008D4C6F /* Lifestyle.storyboard in Resources */,
@@ -238,6 +253,7 @@
 				18F140EE2677F694006B022E /* WelcomeBackViewController.swift in Sources */,
 				18F140CA2677DB33006B022E /* SceneDelegate.swift in Sources */,
 				18F140EC2677F667006B022E /* LoginViewController.swift in Sources */,
+				18D67C82267EA5E7008D4C6F /* ProfileViewController.swift in Sources */,
 				18F140F12678B082006B022E /* Validation.swift in Sources */,
 				18F140E82677E199006B022E /* HomepageViewController.swift in Sources */,
 			);
