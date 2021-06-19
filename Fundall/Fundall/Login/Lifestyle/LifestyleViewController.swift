@@ -1,5 +1,5 @@
 //
-//  CreateAccoutViewController.swift
+//  LoginViewController.swift
 //  Fundall
 //
 //  Created by apple on 14/06/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateAccoutViewController: UIViewController {
+class LifestyleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,5 +16,5 @@ class CreateAccoutViewController: UIViewController {
     }
     
 
-
+   
 }
