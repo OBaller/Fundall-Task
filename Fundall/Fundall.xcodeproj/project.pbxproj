@@ -12,6 +12,13 @@
 		18D67C71267E36F1008D4C6F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18D67C70267E36F1008D4C6F /* IQKeyboardManagerSwift */; };
 		18D67C82267EA5E7008D4C6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C81267EA5E7008D4C6F /* ProfileViewController.swift */; };
 		18D67C84267EA601008D4C6F /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D67C83267EA601008D4C6F /* ProfilePage.storyboard */; };
+		18D67C87267EBFF1008D4C6F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 18D67C86267EBFF1008D4C6F /* Alamofire */; };
+		18D67C8A267EC1DF008D4C6F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C89267EC1DE008D4C6F /* Constant.swift */; };
+		18D67C8D267EC36F008D4C6F /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C8C267EC36F008D4C6F /* RegisterModel.swift */; };
+		18D67C90267EC47E008D4C6F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C8F267EC47E008D4C6F /* APIManager.swift */; };
+		18D67C92267ECB77008D4C6F /* Alert + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C91267ECB77008D4C6F /* Alert + Extension.swift */; };
+		18D67C94267EE8B4008D4C6F /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C93267EE8B4008D4C6F /* LoginModel.swift */; };
+		18D67C96267F62E4008D4C6F /* Textfield + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67C95267F62E4008D4C6F /* Textfield + Extension.swift */; };
 		18F140C82677DB33006B022E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F140C72677DB33006B022E /* AppDelegate.swift */; };
 		18F140CA2677DB33006B022E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F140C92677DB33006B022E /* SceneDelegate.swift */; };
 		18F140D12677DB34006B022E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F140D02677DB34006B022E /* Assets.xcassets */; };
@@ -32,6 +39,12 @@
 		18D67C6D267E09A6008D4C6F /* Lifestyle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lifestyle.storyboard; sourceTree = "<group>"; };
 		18D67C81267EA5E7008D4C6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		18D67C83267EA601008D4C6F /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
+		18D67C89267EC1DE008D4C6F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		18D67C8C267EC36F008D4C6F /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		18D67C8F267EC47E008D4C6F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		18D67C91267ECB77008D4C6F /* Alert + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert + Extension.swift"; sourceTree = "<group>"; };
+		18D67C93267EE8B4008D4C6F /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		18D67C95267F62E4008D4C6F /* Textfield + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield + Extension.swift"; sourceTree = "<group>"; };
 		18F140C42677DB33006B022E /* Fundall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F140C72677DB33006B022E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F140C92677DB33006B022E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D67C71267E36F1008D4C6F /* IQKeyboardManagerSwift in Frameworks */,
+				18D67C87267EBFF1008D4C6F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +102,35 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		18D67C88267EC1C4008D4C6F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				18D67C89267EC1DE008D4C6F /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		18D67C8B267EC35A008D4C6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18D67C8C267EC36F008D4C6F /* RegisterModel.swift */,
+				18D67C93267EE8B4008D4C6F /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D67C8E267EC469008D4C6F /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				18D67C8F267EC47E008D4C6F /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
 		18F140BB2677DB33006B022E = {
 			isa = PBXGroup;
 			children = (
+				18D67C88267EC1C4008D4C6F /* Constants */,
 				18F140C62677DB33006B022E /* Fundall */,
 				18F140C52677DB33006B022E /* Products */,
 			);
@@ -107,6 +147,8 @@
 		18F140C62677DB33006B022E /* Fundall */ = {
 			isa = PBXGroup;
 			children = (
+				18D67C8E267EC469008D4C6F /* APIManager */,
+				18D67C8B267EC35A008D4C6F /* Model */,
 				18D67C7E267EA403008D4C6F /* Profile */,
 				18F140EF2678B065006B022E /* Extension */,
 				18F140E62677E180006B022E /* Home */,
@@ -162,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				18F140F02678B081006B022E /* Validation.swift */,
+				18D67C91267ECB77008D4C6F /* Alert + Extension.swift */,
+				18D67C95267F62E4008D4C6F /* Textfield + Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,6 +228,7 @@
 			name = Fundall;
 			packageProductDependencies = (
 				18D67C70267E36F1008D4C6F /* IQKeyboardManagerSwift */,
+				18D67C86267EBFF1008D4C6F /* Alamofire */,
 			);
 			productName = Fundall;
 			productReference = 18F140C42677DB33006B022E /* Fundall.app */;
@@ -214,6 +259,7 @@
 			mainGroup = 18F140BB2677DB33006B022E;
 			packageReferences = (
 				18D67C6F267E36F1008D4C6F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				18D67C85267EBFF1008D4C6F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 18F140C52677DB33006B022E /* Products */;
 			projectDirPath = "";
@@ -247,15 +293,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D67C90267EC47E008D4C6F /* APIManager.swift in Sources */,
+				18D67C94267EE8B4008D4C6F /* LoginModel.swift in Sources */,
+				18D67C96267F62E4008D4C6F /* Textfield + Extension.swift in Sources */,
 				18F140C82677DB33006B022E /* AppDelegate.swift in Sources */,
 				18F140DE2677DF84006B022E /* SignupViewController.swift in Sources */,
 				18F140E32677E004006B022E /* LifestyleViewController.swift in Sources */,
 				18F140EE2677F694006B022E /* WelcomeBackViewController.swift in Sources */,
 				18F140CA2677DB33006B022E /* SceneDelegate.swift in Sources */,
 				18F140EC2677F667006B022E /* LoginViewController.swift in Sources */,
+				18D67C8D267EC36F008D4C6F /* RegisterModel.swift in Sources */,
 				18D67C82267EA5E7008D4C6F /* ProfileViewController.swift in Sources */,
+				18D67C8A267EC1DF008D4C6F /* Constant.swift in Sources */,
 				18F140F12678B082006B022E /* Validation.swift in Sources */,
 				18F140E82677E199006B022E /* HomepageViewController.swift in Sources */,
+				18D67C92267ECB77008D4C6F /* Alert + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +509,14 @@
 				minimumVersion = 6.5.6;
 			};
 		};
+		18D67C85267EBFF1008D4C6F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -464,6 +524,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 18D67C6F267E36F1008D4C6F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		18D67C86267EBFF1008D4C6F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18D67C85267EBFF1008D4C6F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
