@@ -49,11 +49,11 @@ class SignupViewController: UIViewController {
         let register = RegisterModel(firstname: fName, lastname: lName, email: email_, password: password, password_confirmation: confirmPassword)
         
         APIManager.shareInstance.fetchRegisterAPI(register: register)
-        { (isSuccess) in
+        { (isSuccess, str) in
             if isSuccess {
-                AlertController.showAlert(self, title: "Alert!!!", message: "User register successfully")
+                AlertController.showAlert(self, title: "Alert!!!", message: str)
             } else {
-                AlertController.showAlert(self, title: "Alert!!!", message: "Please try again")
+                AlertController.showAlert(self, title: "Alert!!!", message: str)
             }
         }
         

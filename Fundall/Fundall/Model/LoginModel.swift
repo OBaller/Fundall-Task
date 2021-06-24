@@ -5,7 +5,7 @@
 //  Created by apple on 20/06/2021.
 //
 
-import UIKit
+import Foundation
 
 struct LoginModel: Encodable {
     let email: String
