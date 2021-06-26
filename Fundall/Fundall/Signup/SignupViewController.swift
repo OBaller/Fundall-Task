@@ -19,7 +19,11 @@ class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if UserDefaults.standard.bool(forKey: "Loggedin") == true {
+            let lifeVC = UIStoryboard(name: "Lifestyle", bundle: nil)
+            let saveInfoVC = lifeVC.instantiateViewController(identifier: "LifestyleViewController") as! LifestyleViewController
+            navigationController?.pushViewController(saveInfoVC, animated: true)
+        }
         
     }
     func signToHome() {
@@ -72,8 +76,9 @@ class SignupViewController: UIViewController {
             }
             alertController.addAction(acceptAction)
             self.present(alertController, animated: true, completion: nil)
-            
+            UserDefaults.standard.set(true, forKey: "Loggedin")
         }
+        
     }
     
     

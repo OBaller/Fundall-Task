@@ -28,10 +28,12 @@ class WelcomeBackViewController: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
-        
+        let logVC = UIStoryboard(name: "Homepage", bundle: nil)
+        let homeVCC = logVC.instantiateViewController(identifier: "Home") as! HomepageViewController
+        navigationController?.pushViewController(homeVCC, animated: true)
     }
     
     @IBAction func createAccountPressed(_ sender: UIButton) {
-        
+        navigationController?.popToRootViewController(animated: true)
     }
 }
