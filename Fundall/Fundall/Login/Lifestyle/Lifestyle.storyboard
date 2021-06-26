@@ -11,7 +11,7 @@
         <!--Lifestyle View Controller-->
         <scene sceneID="2pK-P6-0Dh">
             <objects>
-                <viewController id="vsT-4U-evJ" customClass="LifestyleViewController" customModule="Fundall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LifestyleViewController" id="vsT-4U-evJ" customClass="LifestyleViewController" customModule="Fundall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q7P-Eo-ne2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

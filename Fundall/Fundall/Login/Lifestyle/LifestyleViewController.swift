@@ -13,18 +13,25 @@ class LifestyleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func lockTapped(_ sender: UIButton) {
+        let lockVC = UIStoryboard(name: "Welcome", bundle: nil)
+        let WelcomeVC = lockVC.instantiateViewController(identifier: "Welcome") as! WelcomeBackViewController
+        navigationController?.pushViewController(WelcomeVC, animated: true)
     }
     
-    @IBAction func biometricTapped(_ sender: Any) {
+    @IBAction func biometricTapped(_ sender: UIButton) {
     }
     
     @IBAction func switchAccountPressed(_ sender: UIButton) {
+        let switchVC = UIStoryboard(name: "Login", bundle: nil)
+        let lifeVC = switchVC.instantiateViewController(identifier: "Login") as! LoginViewController
+        navigationController?.pushViewController(lifeVC, animated: true)
     }
-    @IBAction func createAccountPressed(_ sender: Any) {
+    
+    @IBAction func createAccountPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
 }
